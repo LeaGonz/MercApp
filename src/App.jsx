@@ -1,34 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './styles/App.css'
+import React from 'react'
+import { useTranslation } from 'react-i18next'    // react-i18next hook
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  // t translation function receives a key and returns the translated string
+  // i18n object allows changing the language dynamically
+  const { t, i18n } = useTranslation()
+
+  // Function to change the language. 
+  // React renders "t()" component to update the UI
+  const changeLng = (lng) => {
+    i18n.changeLanguage(lng)
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className='flex flex-col items-center justify-center h-screen bg-gray-100'>
+      {/* Title */}
+      <h1 className='text-3xl font-bold mb-4'>{t("welcome")}</h1>
+
+      <div className='space-x-2'>
+
+        {/* Buttons switch languages */}
+        <button
+          className='px-4 py-2 bg-blue-500 text-white rounded'
+          onClick={() => changeLng('pt')}
+        >PT</button>
+
+        <button
+          className='px-4 py-2 bg-blue-500 text-white rounded'
+          onClick={() => changeLng('es')}
+        >ES</button>
+        <button
+          className='px-4 py-2 bg-blue-500 text-white rounded'
+          onClick={() => changeLng('en')}
+        >EN</button>
+
+
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 

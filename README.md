@@ -1,12 +1,28 @@
-# React + Vite
+# My React + Vite + Tailwind Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 MercApp - Project Progress Log
 
-Currently, two official plugins are available:
+### Day 1 – Setup & Internationalization (i18n) Basics
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Today I started the foundation of my project.
 
-## Expanding the ESLint configuration
+- ✅ Created the repository and set up React with Vite.
+- ✅ Installed and configured TailwindCSS for styling.
+- ✅ Added i18n (internationalization) support with language JSON files.
+- ✅ Implemented manual language switching between Portuguese, Spanish and English.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🔍 What I Learned
+
+- How Vite works as a modern, fast bundler for React projects.
+- The basics of TailwindCSS and how utility classes style the UI.
+- How i18n manages translations and how to switch languages with `useTranslation` and `changeLanguage`.
+
+### 🚀 Next Steps
+
+- Add **automatic browser language detection**.
+- Continue building the app step by step with clean code and documentation.
+
+---
+
+I’m building this project while learning, so everything is documented as clearly as possible.  
+This repository is not just about code – it’s about growth, discipline, and continuous improvement 🌱.

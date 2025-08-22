@@ -1,4 +1,18 @@
 {
-  "welcome": "Bem-vindo ao MercApp!",
-  "language": "Idioma"
+  "home": {
+    "title": "Página Inicial",
+    "welcomeMessage": "Bem-vindo à MercApp!"
+  },
+  "about": {
+    "title": "Sobre Nós",
+    "description": "Esta é a página sobre o projeto."
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "Podes falar connosco através desta página."
+  },
+  "notfound": {
+    "title": "Página não encontrada",
+    "message": "Oops! O conteúdo que procuras não existe."
+  }
 }

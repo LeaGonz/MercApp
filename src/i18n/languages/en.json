@@ -1,4 +1,18 @@
 {
-  "welcome": "Welcome to MercApp!",
-  "language": "Language"
+  "home": {
+    "title": "Home Page",
+    "welcomeMessage": "Welcome to MercApp!"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "This is the about page for MercApp."
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "You can reach us through this page."
+  },
+  "notfound": {
+    "title": "Page Not Found",
+    "message": "Oops! The content you're looking for does not exist."
+  }
 }

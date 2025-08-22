@@ -1,40 +1,41 @@
-🛒 MercApp – React + Vite + Tailwind Project
+# 🛒 MercApp – React + Vite + Tailwind Project  
 
-🚀 Progress Log
+---
 
-🏗️ Foundation
+## 🚀 Progress Log  
 
-✅ Repository created and environment set up with React + Vite
-✅ Installed and configured TailwindCSS for clean, scalable UI design
+### 🏗️ Foundation  
+- ✅ Repository created and environment set up with **React + Vite**  
+- ✅ Installed and configured **TailwindCSS** for clean, scalable UI design  
 
-🌍 Internationalization
+### 🌍 Internationalization  
+- ✅ Integrated **i18next** with JSON language files (🇵🇹 Portuguese, 🇪🇸 Spanish, 🇬🇧 English)  
+- ✅ Manual language switching implemented  
+- ✅ Browser language detection via **i18next-browser-languagedetector**  
+  - Detection order: `localStorage → navigator`  
+  - User choice cached in `localStorage`  
 
-✅ Integrated i18next with JSON language files (🇵🇹 Portuguese, 🇪🇸 Spanish, 🇬🇧 English)
-✅ Manual language switching implemented
-✅ Browser language detection via i18next-browser-languagedetector
-   • Detection order: localStorage → navigator
-   • User choice cached in localStorage
+### 🧭 Routing  
+- ✅ Configured **React Router v6**  
+  - `/` → Home  
+  - `/about` → About  
+  - `/contact` → Contact  
+  - `*` → NotFound  
 
-🎨 Layout & Language Selector
+### 🎨 Layout & Language Selector  
+- ✅ Created **Master Layout** with `<Outlet />`  
+- ✅ Added **Navbar** with fully functional **Language Selector**  
 
-✅ Created Master Layout with <Outlet />
-✅ Added Navbar with fully functional Language Selector
+---
 
-🎯 Next Milestone
-
-📦 Add product catalog seed (/public/data/products.json)
-
-🛍️ Implement the Cart MVP:
-
-Add items with quantity control
-
-Show subtotals, totals, and item count
-
-Edit/remove items
-
-Persist cart in localStorage (mercapp_cart_v1)
-
-📊 Add a sticky bottom bar with running total & over-budget alert
+## 🎯 Next Milestone (Tomorrow’s Focus)  
+- 📦 Add product catalog seed 
+- 🛍️ Implement the **Cart MVP**:  
+  - Add items with quantity control  
+  - Show subtotals, totals, and item count  
+  - Edit/remove items  
+  - Persist cart in `localStorage`  
+- 📊 Add a sticky bottom bar with running total & over-budget alert  
 
 ---
 

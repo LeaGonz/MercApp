@@ -11,16 +11,29 @@ Today I started the foundation of my project.
 - ✅ Added i18n (internationalization) support with language JSON files.
 - ✅ Implemented manual language switching between Portuguese, Spanish and English.
 
-### 🔍 What I Learned
+---
 
-- How Vite works as a modern, fast bundler for React projects.
-- The basics of TailwindCSS and how utility classes style the UI.
-- How i18n manages translations and how to switch languages with `useTranslation` and `changeLanguage`.
+### Day 2 – Browser Language Detection + Basic Routing
+- ✅ Installed and configured `i18next-browser-languagedetector`.
+- ✅ Detection order set to **localStorage → navigator**, and the chosen language is cached in localStorage. (Common pitfall fixed: the option is spelled `"navigator"`.)
+- ✅ Created basic routing with React Router v6:
+  - `/` → Home
+  - `/about` → About
+  - `/contact` → Contact
+  - `*` → NotFound (fallback)
+- ✅ Verified translations render via `t("key")` across pages.
 
-### 🚀 Next Steps
+---
 
-- Add **automatic browser language detection**.
-- Continue building the app step by step with clean code and documentation.
+**Next Steps**
+- Build a shared **Layout** with `<Outlet />`, a **Navbar** (with language selector), and **Footer**.
+- Add `public/data/products.json` as the seed catalog.
+- Implement the cart MVP:
+  - Add items with quantity control.
+  - Show item subtotals, total sum, and item count.
+  - Edit/remove actions.
+  - Persist to `localStorage` under `mercapp_cart_v1`.
+- Add a bottom sticky bar with the running total and an over-budget alert.
 
 ---
 

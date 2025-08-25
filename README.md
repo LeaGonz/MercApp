@@ -13,7 +13,6 @@
 - ✅ Manual language switching implemented  
 - ✅ Browser language detection via **i18next-browser-languagedetector**  
   - Detection order: `localStorage → navigator`  
-  - User choice cached in `localStorage`  
 
 ### 🧭 Routing  
 - ✅ Configured **React Router v6**  

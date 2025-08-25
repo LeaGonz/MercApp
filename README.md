@@ -11,18 +11,12 @@
 - ✅ Integrated **i18next** with JSON language files (🇵🇹 Portuguese, 🇪🇸 Spanish, 🇬🇧 English)  
 - ✅ Manual language switching implemented  
 - ✅ Browser language detection via **i18next-browser-languagedetector**  
-  - Detection order: `localStorage → navigator`  
+- ✅ Detection order: `localStorage → navigator`  
 
-### 🧭 Routing  
-- ✅ Configured **React Router v6**  
-  - `/` → Home  
-  - `/about` → About  
-  - `/contact` → Contact  
-  - `*` → NotFound  
-
-### 🎨 Layout & Language Selector  
+### 🎨 Layout  
 - ✅ Created **Master Layout** with `<Outlet />`  
 - ✅ Added **Navbar** with fully functional **Language Selector**  
+- ✅ Added **Footer** as sticky bottom navigation bar with 3 buttons: Home, About, Contact  
 
 ---
 
@@ -33,7 +27,7 @@
   - Show subtotals, totals, and item count  
   - Edit/remove items  
   - Persist cart in `localStorage`  
-- 📊 Add a sticky bottom bar with running total & over-budget alert  
+- 📊 Add running total & over-budget alert to the bottom navigation bar  
 
 ---
 

@@ -1,13 +1,16 @@
 {
   "home": {
+    "label": "Home",
     "title": "Home Page",
     "welcomeMessage": "Welcome to MercApp!"
   },
   "about": {
+    "label": "About us",
     "title": "About Us",
     "description": "This is the about page for MercApp."
   },
   "contact": {
+    "label": "Contact",
     "title": "Contact",
     "description": "You can reach us through this page."
   },

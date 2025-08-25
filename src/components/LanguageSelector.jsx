@@ -5,11 +5,13 @@ import ptFlag from "../assets/flags/pt.svg"
 import esFlag from "../assets/flags/es.svg"
 import enFlag from "../assets/flags/gb.svg"
 
+// Languages options and images
 const LNG = [
     { lng: "pt", img: ptFlag },
     { lng: "es", img: esFlag },
     { lng: "en", img: enFlag }
 ]
+
 export default function LanguageSelector() {
 
     const { i18n } = useTranslation()
@@ -100,7 +102,7 @@ export default function LanguageSelector() {
                                     ring-1 ring-black/10 flex-shrink-0"
                                     >
                                         <img
-                                            src={element.img || "/placeholder.svg"}
+                                            src={element.img}
                                             alt={`${element.lng} Flag`}
                                             className="w-full h-full object-cover"
                                         />

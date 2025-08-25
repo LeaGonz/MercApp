@@ -1,13 +1,16 @@
 {
   "home": {
+    "label": "Início",
     "title": "Página Inicial",
     "welcomeMessage": "Bem-vindo à MercApp!"
   },
   "about": {
+    "label": "Sobre nós",
     "title": "Sobre Nós",
     "description": "Esta é a página sobre o projeto."
   },
   "contact": {
+    "label": "Contacto",
     "title": "Contacto",
     "description": "Podes falar connosco através desta página."
   },

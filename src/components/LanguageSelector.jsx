@@ -1,5 +1,6 @@
-import React, { useState, useEffect, useRef } from "react"
+import { useState, useEffect, useRef } from "react"
 import { useTranslation } from "react-i18next"
+
 // Flags
 import ptFlag from "../assets/flags/pt.svg"
 import esFlag from "../assets/flags/es.svg"

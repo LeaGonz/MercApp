@@ -1,0 +1,346 @@
+{
+    "version": "1.0.0",
+    "createdAt": "2025-08-26T00:00:00Z",
+    "products": [
+        {
+            "id": 1,
+            "name": "Arroz Basmati",
+            "category": "Mercearia",
+            "unit": "kg",
+            "price": 1.99,
+            "currency": "EUR",
+            "image": "",
+            "store": "Lidl"
+        },
+        {
+            "id": 2,
+            "name": "Salmão",
+            "category": "Peixaria",
+            "unit": "kg",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 3,
+            "name": "Salada",
+            "category": "Hortifruti",
+            "unit": "unid",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 4,
+            "name": "Lentilhas",
+            "category": "Mercearia",
+            "unit": "kg",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 5,
+            "name": "Ovos",
+            "category": "Frescos",
+            "unit": "dúzia",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 6,
+            "name": "Gel de Banho",
+            "category": "Higiene",
+            "unit": "unid",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 7,
+            "name": "Pão Rústico Bimbo",
+            "category": "Padaria",
+            "unit": "unid",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 8,
+            "name": "Azeite",
+            "category": "Mercearia",
+            "unit": "lts",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 9,
+            "name": "Detergente Líquido Roupa",
+            "category": "Limpeza",
+            "unit": "lts",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 10,
+            "name": "Atum",
+            "category": "Conservas",
+            "unit": "lata",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 11,
+            "name": "Tomate",
+            "category": "Hortifruti",
+            "unit": "kg",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 12,
+            "name": "Feijão preto",
+            "category": "Mercearia",
+            "unit": "kg",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 13,
+            "name": "Batata Assar",
+            "category": "Hortifruti",
+            "unit": "kg",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 14,
+            "name": "Pasta de Dentes",
+            "category": "Higiene",
+            "unit": "unid",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 15,
+            "name": "Pimentão",
+            "category": "Hortifruti",
+            "unit": "kg",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 16,
+            "name": "Sal Fino",
+            "category": "Mercearia",
+            "unit": "kg",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 17,
+            "name": "Abacate Hass",
+            "category": "Hortifruti",
+            "unit": "kg",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 18,
+            "name": "Peito Frango",
+            "category": "Açougue",
+            "unit": "kg",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 19,
+            "name": "Milho Doce",
+            "category": "Conservas",
+            "unit": "lata",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 20,
+            "name": "Cenoura",
+            "category": "Hortifruti",
+            "unit": "kg",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 21,
+            "name": "Vinho",
+            "category": "Bebidas",
+            "unit": "garrafa",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 22,
+            "name": "Alho Francês",
+            "category": "Hortifruti",
+            "unit": "kg",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 23,
+            "name": "Grão Bico",
+            "category": "Mercearia",
+            "unit": "kg",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 24,
+            "name": "Leite Amêndoa",
+            "category": "Bebidas",
+            "unit": "lts",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 25,
+            "name": "Papel Higiénico",
+            "category": "Higiene",
+            "unit": "pack",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 26,
+            "name": "Asas Frango",
+            "category": "Açougue",
+            "unit": "kg",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 27,
+            "name": "Carne Picada",
+            "category": "Açougue",
+            "unit": "kg",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 28,
+            "name": "Manteiga",
+            "category": "Frescos",
+            "unit": "unid",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 29,
+            "name": "Polpa Tomate",
+            "category": "Conservas",
+            "unit": "embalagem",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 30,
+            "name": "Rojões Porco",
+            "category": "Açougue",
+            "unit": "kg",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 31,
+            "name": "Leite Aveia",
+            "category": "Bebidas",
+            "unit": "lts",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 32,
+            "name": "Esparguete",
+            "category": "Mercearia",
+            "unit": "kg",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 33,
+            "name": "Coentros",
+            "category": "Hortifruti",
+            "unit": "molho",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        },
+        {
+            "id": 34,
+            "name": "Guardanapos",
+            "category": "Limpeza",
+            "unit": "pack",
+            "price": "",
+            "currency": "EUR",
+            "image": "",
+            "store": ""
+        }
+    ]
+}

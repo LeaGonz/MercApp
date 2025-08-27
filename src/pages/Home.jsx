@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import { useProducts } from "../hooks/useProducts";
-import { useEffect } from "react";
 
 export default function Home() {
     const { t } = useTranslation()

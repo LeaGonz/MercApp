@@ -18,10 +18,17 @@
 - ✅ Added **Navbar** with fully functional **Language Selector**  
 - ✅ Added **Footer** as sticky bottom navigation bar with 3 buttons: Home, About, Contact  
 
+### 🗄️ Data & Hooks (NEW)
+- ✅ Created `useProducts` custom hook:
+- ✅ Loads products from `/data/products.json`
+- ✅ Caches products in `localStorage` (`mercapp_products`)
+- ✅ Home page connected to `useProducts` and shows loading / error states correctly
+- ✅ Refresh button implemented to manually reload products and update cache
+
 ---
 
 ## 🎯 Next Milestone (Tomorrow’s Focus)  
-- 📦 Add product catalog seed 
+- 📦 Add product catalog seed (if needed, confirm `products.json` content)
 - 🛍️ Implement the **Cart MVP**:  
   - Add items with quantity control  
   - Show subtotals, totals, and item count  

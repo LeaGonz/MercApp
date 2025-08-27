@@ -17,7 +17,7 @@
             "name": "Salmão",
             "category": "Peixaria",
             "unit": "kg",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -25,9 +25,9 @@
         {
             "id": 3,
             "name": "Salada",
-            "category": "Hortifruti",
+            "category": "Frutas e Vegetais",
             "unit": "unid",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -37,7 +37,7 @@
             "name": "Lentilhas",
             "category": "Mercearia",
             "unit": "kg",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -45,9 +45,9 @@
         {
             "id": 5,
             "name": "Ovos",
-            "category": "Frescos",
+            "category": "Mercearia",
             "unit": "dúzia",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -57,7 +57,7 @@
             "name": "Gel de Banho",
             "category": "Higiene",
             "unit": "unid",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -67,7 +67,7 @@
             "name": "Pão Rústico Bimbo",
             "category": "Padaria",
             "unit": "unid",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -77,7 +77,7 @@
             "name": "Azeite",
             "category": "Mercearia",
             "unit": "lts",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -87,7 +87,7 @@
             "name": "Detergente Líquido Roupa",
             "category": "Limpeza",
             "unit": "lts",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -97,7 +97,7 @@
             "name": "Atum",
             "category": "Conservas",
             "unit": "lata",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -105,9 +105,9 @@
         {
             "id": 11,
             "name": "Tomate",
-            "category": "Hortifruti",
+            "category": "Frutas e Vegetais",
             "unit": "kg",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -117,7 +117,7 @@
             "name": "Feijão preto",
             "category": "Mercearia",
             "unit": "kg",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -125,9 +125,9 @@
         {
             "id": 13,
             "name": "Batata Assar",
-            "category": "Hortifruti",
+            "category": "Frutas e Vegetais",
             "unit": "kg",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -137,7 +137,7 @@
             "name": "Pasta de Dentes",
             "category": "Higiene",
             "unit": "unid",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -145,9 +145,9 @@
         {
             "id": 15,
             "name": "Pimentão",
-            "category": "Hortifruti",
+            "category": "Frutas e Vegetais",
             "unit": "kg",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -157,7 +157,7 @@
             "name": "Sal Fino",
             "category": "Mercearia",
             "unit": "kg",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -165,9 +165,9 @@
         {
             "id": 17,
             "name": "Abacate Hass",
-            "category": "Hortifruti",
+            "category": "Frutas e Vegetais",
             "unit": "kg",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -175,9 +175,9 @@
         {
             "id": 18,
             "name": "Peito Frango",
-            "category": "Açougue",
+            "category": "Talho",
             "unit": "kg",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -187,7 +187,7 @@
             "name": "Milho Doce",
             "category": "Conservas",
             "unit": "lata",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -195,9 +195,9 @@
         {
             "id": 20,
             "name": "Cenoura",
-            "category": "Hortifruti",
+            "category": "Frutas e Vegetais",
             "unit": "kg",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -207,7 +207,7 @@
             "name": "Vinho",
             "category": "Bebidas",
             "unit": "garrafa",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -215,9 +215,9 @@
         {
             "id": 22,
             "name": "Alho Francês",
-            "category": "Hortifruti",
+            "category": "Frutas e Vegetais",
             "unit": "kg",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -227,7 +227,7 @@
             "name": "Grão Bico",
             "category": "Mercearia",
             "unit": "kg",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -237,7 +237,7 @@
             "name": "Leite Amêndoa",
             "category": "Bebidas",
             "unit": "lts",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -247,7 +247,7 @@
             "name": "Papel Higiénico",
             "category": "Higiene",
             "unit": "pack",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -255,9 +255,9 @@
         {
             "id": 26,
             "name": "Asas Frango",
-            "category": "Açougue",
+            "category": "Talho",
             "unit": "kg",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -265,9 +265,9 @@
         {
             "id": 27,
             "name": "Carne Picada",
-            "category": "Açougue",
+            "category": "Talho",
             "unit": "kg",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -275,9 +275,9 @@
         {
             "id": 28,
             "name": "Manteiga",
-            "category": "Frescos",
+            "category": "Mercearia",
             "unit": "unid",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -287,7 +287,7 @@
             "name": "Polpa Tomate",
             "category": "Conservas",
             "unit": "embalagem",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -295,9 +295,9 @@
         {
             "id": 30,
             "name": "Rojões Porco",
-            "category": "Açougue",
+            "category": "Talho",
             "unit": "kg",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -307,7 +307,7 @@
             "name": "Leite Aveia",
             "category": "Bebidas",
             "unit": "lts",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -317,7 +317,7 @@
             "name": "Esparguete",
             "category": "Mercearia",
             "unit": "kg",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -325,9 +325,9 @@
         {
             "id": 33,
             "name": "Coentros",
-            "category": "Hortifruti",
+            "category": "Frutas e Vegetais",
             "unit": "molho",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""
@@ -337,7 +337,7 @@
             "name": "Guardanapos",
             "category": "Limpeza",
             "unit": "pack",
-            "price": "",
+            "price": 0,
             "currency": "EUR",
             "image": "",
             "store": ""

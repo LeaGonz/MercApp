@@ -9,7 +9,7 @@
             "unit": "kg",
             "price": 1.99,
             "currency": "EUR",
-            "image": "",
+            "image": "🍚",
             "store": "Lidl"
         },
         {
@@ -19,7 +19,7 @@
             "unit": "kg",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🐟",
             "store": ""
         },
         {
@@ -27,9 +27,9 @@
             "name": "Salada",
             "category": "Frutas e Vegetais",
             "unit": "unid",
-            "price": 0,
+            "price": 0.99,
             "currency": "EUR",
-            "image": "",
+            "image": "🥗",
             "store": ""
         },
         {
@@ -39,7 +39,7 @@
             "unit": "kg",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🫘",
             "store": ""
         },
         {
@@ -49,7 +49,7 @@
             "unit": "dúzia",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🥚",
             "store": ""
         },
         {
@@ -59,7 +59,7 @@
             "unit": "unid",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🧼",
             "store": ""
         },
         {
@@ -69,7 +69,7 @@
             "unit": "unid",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🥖",
             "store": ""
         },
         {
@@ -79,7 +79,7 @@
             "unit": "lts",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🫒",
             "store": ""
         },
         {
@@ -89,7 +89,7 @@
             "unit": "lts",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🧴",
             "store": ""
         },
         {
@@ -99,7 +99,7 @@
             "unit": "lata",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🐟",
             "store": ""
         },
         {
@@ -109,7 +109,7 @@
             "unit": "kg",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🍅",
             "store": ""
         },
         {
@@ -119,7 +119,7 @@
             "unit": "kg",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🫘",
             "store": ""
         },
         {
@@ -129,7 +129,7 @@
             "unit": "kg",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🥔",
             "store": ""
         },
         {
@@ -139,7 +139,7 @@
             "unit": "unid",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🪥",
             "store": ""
         },
         {
@@ -149,7 +149,7 @@
             "unit": "kg",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🫑",
             "store": ""
         },
         {
@@ -159,7 +159,7 @@
             "unit": "kg",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🧂",
             "store": ""
         },
         {
@@ -169,7 +169,7 @@
             "unit": "kg",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🥑",
             "store": ""
         },
         {
@@ -179,7 +179,7 @@
             "unit": "kg",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🍗",
             "store": ""
         },
         {
@@ -189,7 +189,7 @@
             "unit": "lata",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🌽",
             "store": ""
         },
         {
@@ -199,7 +199,7 @@
             "unit": "kg",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🥕",
             "store": ""
         },
         {
@@ -209,7 +209,7 @@
             "unit": "garrafa",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🍷",
             "store": ""
         },
         {
@@ -219,7 +219,7 @@
             "unit": "kg",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🥬",
             "store": ""
         },
         {
@@ -229,7 +229,7 @@
             "unit": "kg",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🫘",
             "store": ""
         },
         {
@@ -239,7 +239,7 @@
             "unit": "lts",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🥛",
             "store": ""
         },
         {
@@ -249,7 +249,7 @@
             "unit": "pack",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🧻",
             "store": ""
         },
         {
@@ -259,7 +259,7 @@
             "unit": "kg",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🍗",
             "store": ""
         },
         {
@@ -269,7 +269,7 @@
             "unit": "kg",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🥩",
             "store": ""
         },
         {
@@ -279,7 +279,7 @@
             "unit": "unid",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🧈",
             "store": ""
         },
         {
@@ -289,7 +289,7 @@
             "unit": "embalagem",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🥫",
             "store": ""
         },
         {
@@ -299,7 +299,7 @@
             "unit": "kg",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🥓",
             "store": ""
         },
         {
@@ -309,7 +309,7 @@
             "unit": "lts",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🥛",
             "store": ""
         },
         {
@@ -319,7 +319,7 @@
             "unit": "kg",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🍝",
             "store": ""
         },
         {
@@ -329,7 +329,7 @@
             "unit": "molho",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🌿",
             "store": ""
         },
         {
@@ -339,7 +339,7 @@
             "unit": "pack",
             "price": 0,
             "currency": "EUR",
-            "image": "",
+            "image": "🧻",
             "store": ""
         }
     ]

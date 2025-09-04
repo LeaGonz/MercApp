@@ -29,7 +29,7 @@ export default function ProductCard({ product }) {
             <div className="flex-1 min-w-0">
                 <div className="text-base font-semibold text-gray-900">{product.name}</div>
                 <div className="text-xs text-gray-500" >
-                    {product.category} {product.store ? `- ${product.store}` : ""}
+                    {(product.category).substring(2).trim()} {product.store ? `- ${product.store}` : ""}
                 </div>
             </div>
 

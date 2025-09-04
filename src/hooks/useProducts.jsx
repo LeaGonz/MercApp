@@ -79,7 +79,7 @@ export function useProducts() {
     const refreshBtn = () => fetchProducts();
 
     // Categories list
-    const categories = products ? Array.from(new Set(products.map(p => p.category))).sort() : [];
+    const categories = products ? Array.from(new Set(products.map(p => p.category))).sort() : []
 
     return {
         products,

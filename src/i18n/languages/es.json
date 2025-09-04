@@ -17,5 +17,8 @@
   "notfound": {
     "title": "Página no encontrada",
     "message": "¡Vaya! El contenido que buscas no existe."
+  },
+  "categories": {
+    "allLabel": "Todo"
   }
 }

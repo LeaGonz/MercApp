@@ -4,7 +4,7 @@ import Footer from "../components/Footer"
 
 export default function LayoutMaster() {
     return (
-        <div className="h-screen flex flex-col bg-gradient-to-br from-blue-50 to-indigo-100">
+        <div className="h-screen flex flex-col bg-gradient-to-br from-green-100 to-indigo-100">
 
             <Header />
 

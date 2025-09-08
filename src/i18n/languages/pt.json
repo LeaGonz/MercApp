@@ -19,6 +19,7 @@
     "message": "Oops! O conteúdo que procuras não existe."
   },
   "categories": {
-    "allLabel": "Tudo"
+    "allLabel": "Tudo",
+    "searchBar": "Procurar produtos..."
   }
 }

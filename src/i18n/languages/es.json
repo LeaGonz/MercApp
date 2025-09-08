@@ -19,6 +19,7 @@
     "message": "¡Vaya! El contenido que buscas no existe."
   },
   "categories": {
-    "allLabel": "Todo"
+    "allLabel": "Todo",
+    "searchBar": "Buscar productos..."
   }
 }

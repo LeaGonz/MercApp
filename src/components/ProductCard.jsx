@@ -1,5 +1,5 @@
-import { CirclePlus, Icon } from "lucide-react"
-import { formatCurrency, parseNumber } from "../utils/currencyFormat"
+import { CirclePlus } from "lucide-react"
+import { formatCurrency } from "../utils/currencyFormat"
 
 export default function ProductCard({ product }) {
 

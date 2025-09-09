@@ -72,11 +72,25 @@ export function useProducts() {
     useEffect(() => {
         if (products.length === 0) fetchProducts();
 
+
+        const handleCustomRefresh = () => {
+            fetchProducts()
+        }
+        window.addEventListener("productsRefresh", handleCustomRefresh)
+        return () => {
+            window.removeEventListener("productsRefresh", handleCustomRefresh)
+        }
+
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     // Refresh button handler
-    const refreshBtn = () => fetchProducts();
+    const refreshBtn = () => {
+        fetchProducts();
+
+        // To notify others components about the update 
+        window.dispatchEvent(new CustomEvent("productsRefresh"))
+    }
 
     // Categories list
     const categories = products ? Array.from(new Set(products.map(p => p.category))).sort() : []

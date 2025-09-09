@@ -1,6 +1,11 @@
 import LanguageSelector from "./LanguageSelector"
+import { useProducts } from "../hooks/useProducts"
+import { RefreshCcw } from "lucide-react"
 
 export default function Header() {
+
+    const { refreshBtn } = useProducts()
+
     return (
         <header className="bg-white/70 backdrop-blur-xl pt-safe-top p-4 shadow-lg flex-shrink-0">
 
@@ -14,6 +19,12 @@ export default function Header() {
                     </div>
                     <h1 className="text-xl font-semibold text-gray-900 tracking-tight">MercApp</h1>
                 </div>
+
+                {/* Refresh button */}
+                <button onClick={refreshBtn} className="">
+                    <RefreshCcw />
+                </button>
+
 
                 {/* Language Selector */}
                 <LanguageSelector />

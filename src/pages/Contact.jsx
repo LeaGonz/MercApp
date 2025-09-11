@@ -8,5 +8,6 @@ export default function Contact() {
             <h1 className="text-2xl font-bold">{t("contact.title")}</h1>
             <p>{t("contact.description")}</p>
         </div>
+
     )
 }

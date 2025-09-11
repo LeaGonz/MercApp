@@ -8,6 +8,10 @@ export default function ProductCard({ product }) {
         .map(word => word[0].toUpperCase())
         .join("")
 
+        const addToCart = () => {
+            
+        }
+
     return (
         <div className="bg-white/90 rounded-2xl shadow-sm p-2 flex items-center gap-3">
 
@@ -47,6 +51,7 @@ export default function ProductCard({ product }) {
                         className="bg-white active:scale-95"
                         aria-label={`Add ${product.name}`}
                         style={{ WebkitTapHighlightColor: "transparent" }}
+                        onClick={addToCart}
                     >
                         <CirclePlus className="w-6 h-6 text-green-600" />
                     </button>

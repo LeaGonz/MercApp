@@ -1,9 +1,12 @@
 import { useTranslation } from "react-i18next"
 import { NavLink } from "react-router-dom"
 import { Home, Search, User, Settings, Info, Mail, Heart } from "lucide-react"
+import { useCartContext } from "../context/CartContext"
 
 export default function Footer() {
+
     const { t } = useTranslation()
+    const { totalCart } = useCartContext()
 
     // Menu options
     const MENU = [
@@ -40,6 +43,7 @@ export default function Footer() {
 
                     </NavLink>
                 ))}
+                <span>{totalCart.toFixed(2)}</span>
             </nav >
 
         </footer>

@@ -1,16 +1,12 @@
 import { CirclePlus } from "lucide-react"
 import { formatCurrency } from "../utils/currencyFormat"
 
-export default function ProductCard({ product }) {
+export default function ProductCard({ product, addToCart }) {
 
     const nameInitials = product.name
         .split(" ")
         .map(word => word[0].toUpperCase())
         .join("")
-
-        const addToCart = () => {
-            
-        }
 
     return (
         <div className="bg-white/90 rounded-2xl shadow-sm p-2 flex items-center gap-3">
@@ -51,7 +47,7 @@ export default function ProductCard({ product }) {
                         className="bg-white active:scale-95"
                         aria-label={`Add ${product.name}`}
                         style={{ WebkitTapHighlightColor: "transparent" }}
-                        onClick={addToCart}
+                        onClick={() => addToCart(product)}
                     >
                         <CirclePlus className="w-6 h-6 text-green-600" />
                     </button>

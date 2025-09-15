@@ -3,12 +3,13 @@ useCart hook
 - caches and load cart from localStorage
 - manages active and pending carts
 - handles cart operations: add, remove, update, finalize
+- designed to be used on CartProvider (context)
  */
 
 import { useState, useEffect } from "react"
 
 export function useCarts() {
-
+    console.log("test")
     const LOCALSTORAGE_CART_KEY = "mercapp_carts"
 
     // Read carts from localStorage or initialize as empty array
@@ -32,25 +33,25 @@ export function useCarts() {
         } catch (error) {
             console.warn("Failed to save cart to localStorage", error)
         }
-
-        // To notify others components about the update 
-        window.dispatchEvent(new CustomEvent("cartUpdate"))
     }, [carts])
 
     // Total price from products
-    const TotalCart = (products) =>
+    const calculateTotal = (products) =>
         products.reduce(
-            (total, product) => total + (Number(product.price) || 0) * (Number(product.quantity) || 0)
+            (total, product) =>
+                total + ((Number(product.price) || 0) * (Number(product.quantity) || 0))
             , 0)
 
     // Add product to active cart
-    const addToCart = (product) => {
+    const addToCart = (product, quantity) => {
 
         // Normalize new product
         const productToAdd = {
-            ...product,
-            quantity: product.quantity !== undefined ? Number(product.quantity) : 1,
-            price: product.price !== undefined ? Number(product.price) : 0
+            id: product.id,
+            name: product.name,
+            quantity: quantity !== undefined ? Number(quantity) : 1,
+            price: product.price !== undefined ? Number(product.price) : 0,
+            store: product.store
         }
 
         setCarts((prev) => {
@@ -81,7 +82,7 @@ export function useCarts() {
                 const updatedCart = {
                     ...cart,
                     products: newProducts,
-                    total: TotalCart(newProducts)
+                    total: calculateTotal(newProducts)
                 }
                 cartsCopy[pendingCartIndex] = updatedCart
                 return cartsCopy;
@@ -92,10 +93,17 @@ export function useCarts() {
                 id: Date.now().toString(),
                 status: "pending",
                 products: [productToAdd],
-                total: TotalCart([productToAdd])
+                total: calculateTotal([productToAdd])
             }
 
             return [...prev, newCart]
         })
+    }
+
+    return {
+        carts,
+        activeCart,
+        addToCart,
+        totalCart: activeCart ? activeCart.total : 0
     }
 }

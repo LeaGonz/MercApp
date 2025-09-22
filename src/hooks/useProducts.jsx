@@ -48,11 +48,7 @@ export function useProducts() {
             setProducts(data.products)
 
             // Save to localStorage
-            try {
-                localStorage.setItem(LOCALSTORAGE_KEY, JSON.stringify(data.products))
-            } catch (localStorageError) {
-                console.warn("Failed to save products to localStorage", localStorageError)
-            }
+            updateLocalStorage(data.products)
 
         } catch (fetchError) {
             if (fetchError.name === "AbortError") {
@@ -66,30 +62,35 @@ export function useProducts() {
             setLoading(false)
             stopFetchRef.current = null
         }
-    };
+    }
+
+    const updateLocalStorage = (data) => {
+        try {
+            localStorage.setItem(LOCALSTORAGE_KEY, JSON.stringify(data))
+        } catch (localStorageError) {
+            console.warn("Failed to save products to localStorage", localStorageError)
+        }
+    }
+
+    const updatePrice = (productId, newPrice) => {
+        setProducts(prev => {
+            const updated = prev.map(p =>
+                p.id === productId ? { ...p, price: Number(newPrice) } : p
+            )
+            updateLocalStorage(updated)
+            return updated
+        })
+    }
 
     // Fetch products if not already loaded
     useEffect(() => {
-        if (products.length === 0) fetchProducts();
-
-
-        const handleCustomRefresh = () => {
-            fetchProducts()
-        }
-        window.addEventListener("productsRefresh", handleCustomRefresh)
-        return () => {
-            window.removeEventListener("productsRefresh", handleCustomRefresh)
-        }
-
+        if (products.length === 0) fetchProducts()
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+    }, [products.length]);
 
     // Refresh button handler
     const refreshBtn = () => {
         fetchProducts();
-
-        // To notify others components about the update 
-        window.dispatchEvent(new CustomEvent("productsRefresh"))
     }
 
     // Categories list
@@ -100,6 +101,7 @@ export function useProducts() {
         categories,
         loading,
         error,
+        updatePrice,
         refreshBtn
     }
 

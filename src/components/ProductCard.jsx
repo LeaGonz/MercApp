@@ -1,10 +1,17 @@
+import { useState } from "react"
+import { useProductsContext } from "../context/ProductContext"
+import { useCartContext } from "../context/CartContext"
 import { CirclePlus, Minus, Plus } from "lucide-react"
 import { formatCurrency } from "../utils/currencyFormat"
-import { useState } from "react"
 
-export default function ProductCard({ product, addToCart }) {
+export default function ProductCard({ product }) {
+
+    const { updatePrice } = useProductsContext()
+    const { addToCart } = useCartContext()
 
     const [quantity, setQuantity] = useState(1)
+    const [isEditingPrice, setIsEditingPrice] = useState(false)
+    const [tempPrice, setTempPrice] = useState(0)
 
     const nameInitials = product.name
         .split(" ")
@@ -16,7 +23,35 @@ export default function ProductCard({ product, addToCart }) {
         setQuantity(newQuantity)
     }
 
-    const mmButtons = "flex items-center justify-center w-7 h-7 rounded-full bg-gray-100 active:scale-95 transition-all duration-150 hover:bg-gray-200 disabled:opacity-50 disabled:cursor-not-allowed"
+    // ---> Handle price logic
+    const priceUpdate = () => {
+        updatePrice(product.id, tempPrice)
+        setIsEditingPrice(false)
+    }
+
+    const priceOnChange = (e) => {
+        const value = e.target.value
+        if (/^\d*\.?\d*$/.test(value)) {
+            setTempPrice(value)
+        }
+    }
+
+    const priceClick = () => {
+        setIsEditingPrice(true)
+        setTempPrice(product.price || 0)
+    }
+
+    const priceKeyDown = (e) => {
+        if (e.key === "Enter") {
+            priceUpdate()
+        } else if (e.key === "Escape") {
+            setTempPrice(product.price || 0)
+            setIsEditingPrice(false)
+        }
+    }
+    // Handle price logic <---
+
+    const PMButtons = "flex items-center justify-center w-7 h-7 rounded-full bg-gray-100 active:scale-95 transition-all duration-150 hover:bg-gray-200 disabled:opacity-50 disabled:cursor-not-allowed"
 
     return (
         <div className="bg-white/90 rounded-2xl shadow-sm p-2 flex items-center gap-3">
@@ -47,7 +82,7 @@ export default function ProductCard({ product, addToCart }) {
             {Number.isFinite(product.price) && product.price > 0 && (
                 <div className="flex items-center gap-3">
                     <button
-                        className={mmButtons}
+                        className={PMButtons}
                         disabled={quantity <= 1}
                         onClick={() => selectQuantity(-1)}
                     >
@@ -59,7 +94,7 @@ export default function ProductCard({ product, addToCart }) {
                     </div>
 
                     <button
-                        className={mmButtons}
+                        className={PMButtons}
                         disabled={quantity >= 20}
                         onClick={() => selectQuantity(1)}
 
@@ -76,9 +111,25 @@ export default function ProductCard({ product, addToCart }) {
                         {quantity}x {formatCurrency(product.price)}
                     </div>
                 }
-                <div className={`text-sm font-semibold ${product.price ? "text-green-700" : "text-gray-400"}`}>
-                    {formatCurrency(product.price * quantity)}
-                </div>
+                {isEditingPrice ? (
+                    <input
+                        type="number"
+                        value={tempPrice}
+                        onChange={priceOnChange}
+                        onKeyDown={priceKeyDown}
+                        onBlur={priceUpdate}
+                        className="w-15 text-sm font-semibold text-green-700 bg-transparent 
+                            border-b border-green-300 outline-none text-right"
+                        autoFocus
+                    />
+                ) : (
+                    <div
+                        className={`text-sm font-semibold ${product.price ? "text-green-700" : "text-gray-400"}`}
+                        onClick={priceClick}
+                    >
+                        {formatCurrency(product.price * quantity)}
+                    </div>
+                )}
             </div>
 
             {/* Add button */}

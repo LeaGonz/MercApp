@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next"
-import { useProducts } from "../hooks/useProducts"
-import { useCartContext } from "../context/CartContext"
+import { useProductsContext } from "../context/ProductContext"
 import { useMemo, useState } from "react"
 import ProductCard from "../components/ProductCard"
 import SearchBar from "../components/SearchBar"
@@ -10,8 +9,7 @@ export default function Home() {
     const { t } = useTranslation()
 
     // Products
-    const { addToCart } = useCartContext()
-    const { products, categories, loading, error } = useProducts()
+    const { products, categories, loading, error } = useProductsContext()
     const [currentCategory, setCurrentCategory] = useState("all")
     const [searchBar, setSearchBar] = useState("")
 
@@ -53,7 +51,7 @@ export default function Home() {
                 /* Mobile col 1 - Others screens col 2 and 3 */
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1">
                     {filteredProducts.map(p => (
-                        <ProductCard key={p.id} product={p} addToCart={addToCart} />
+                        <ProductCard key={p.id} product={p} />
                     ))}
                 </div>
             )

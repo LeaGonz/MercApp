@@ -6,7 +6,7 @@ import { useCartContext } from "../context/CartContext"
 export default function Footer() {
 
     const { t } = useTranslation()
-    const { totalCart } = useCartContext()
+    const { totalCart, clearCart } = useCartContext()
 
     // Menu options
     const MENU = [
@@ -43,7 +43,10 @@ export default function Footer() {
 
                     </NavLink>
                 ))}
-                <span>{totalCart.toFixed(2)}</span>
+                <span className="flex flex-col items-center justify-center">
+                    <button className="bg-green-200 p-1 rounded-xl">{totalCart.toFixed(2)} 🛒</button>
+                    <button className="bg-red-400 p-1 rounded-xl" onClick={clearCart}>Clean</button>
+                </span>
             </nav >
 
         </footer>

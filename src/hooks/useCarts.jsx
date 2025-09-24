@@ -9,7 +9,7 @@ useCart hook
 import { useState, useEffect } from "react"
 
 export function useCarts() {
-    console.log("test")
+
     const LOCALSTORAGE_CART_KEY = "mercapp_carts"
 
     // Read carts from localStorage or initialize as empty array
@@ -63,18 +63,19 @@ export function useCarts() {
                 const cartsCopy = [...prev]
                 const cart = cartsCopy[pendingCartIndex] // we will work with this cart
 
-                // Find if product exists
-                const existingProduct = cart.products.findIndex((i) => i.id === productToAdd.id)
+                // Find if product exists and have the same price
+                const existingProduct = cart.products.findIndex(
+                    (i) => i.id === productToAdd.id && i.price === productToAdd.price)
 
                 let newProducts = [...cart.products]
                 if (existingProduct !== -1) {
-                    // exists
+                    // exists and same precia, just update quantity
                     newProducts[existingProduct] = {
                         ...newProducts[existingProduct],
                         quantity: newProducts[existingProduct].quantity + productToAdd.quantity
                     }
                 } else {
-                    // no exists
+                    // no exists or exists but different price, add new item
                     newProducts.push(productToAdd)
                 }
 
@@ -85,7 +86,7 @@ export function useCarts() {
                     total: calculateTotal(newProducts)
                 }
                 cartsCopy[pendingCartIndex] = updatedCart
-                return cartsCopy;
+                return cartsCopy
             }
 
             // If no pending cart, create new one
@@ -100,10 +101,32 @@ export function useCarts() {
         })
     }
 
+    const clearCart = () => {
+
+        setCarts((prev) => {
+            const pendingCartIndex = prev.findIndex((cart) => cart.status === "pending")
+
+            if (pendingCartIndex !== -1) {
+                const cartsCopy = [...prev]
+                const cleanCart = {
+                    ...cartsCopy[pendingCartIndex],
+                    products: [],
+                    total: 0
+                }
+                cartsCopy[pendingCartIndex] = cleanCart
+                return cartsCopy
+            }
+
+            return prev
+        })
+
+    }
+
     return {
         carts,
         activeCart,
         addToCart,
+        clearCart,
         totalCart: activeCart ? activeCart.total : 0
     }
 }

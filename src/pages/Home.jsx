@@ -4,6 +4,7 @@ import { useMemo, useState } from "react"
 import ProductCard from "../components/ProductCard"
 import SearchBar from "../components/SearchBar"
 import CategoriesSelector from "../components/CategoriesSelector"
+import Cart from "../pages/Cart"
 
 export default function Home() {
     const { t } = useTranslation()

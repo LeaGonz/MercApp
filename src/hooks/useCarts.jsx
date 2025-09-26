@@ -51,7 +51,8 @@ export function useCarts() {
             name: product.name,
             quantity: quantity !== undefined ? Number(quantity) : 1,
             price: product.price !== undefined ? Number(product.price) : 0,
-            store: product.store
+            store: product.store,
+            image: product.image || ""
         }
 
         setCarts((prev) => {
@@ -122,11 +123,38 @@ export function useCarts() {
 
     }
 
+    const removeFromCart = (productId, price) => {
+        setCarts(prev => {
+            const pendingCartIndex = prev.findIndex(cart => cart.status === "pending")
+            if (pendingCartIndex === -1) return prev
+
+            const cartsCopy = [...prev]
+            const cart = cartsCopy[pendingCartIndex]
+
+            const newProducts = cart.products.map(p => {
+                if (p.id === productId && p.price === price) {
+                    return { ...p, quantity: p.quantity - 1 }
+                }
+                return p
+            }).filter(p => p.quantity > 0) // elimina productos con quantity 0
+
+            cartsCopy[pendingCartIndex] = {
+                ...cart,
+                products: newProducts,
+                total: calculateTotal(newProducts)
+            }
+
+            return cartsCopy
+        })
+    }
+
+
     return {
         carts,
         activeCart,
         addToCart,
         clearCart,
+        removeFromCart,
         totalCart: activeCart ? activeCart.total : 0
     }
 }

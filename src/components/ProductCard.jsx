@@ -140,7 +140,6 @@ export default function ProductCard({ product }) {
                         aria-label={`Add ${product.name}`}
                         style={{ WebkitTapHighlightColor: "transparent" }}
                         onClick={() => {
-                            console.info(product)
                             addToCart(product, quantity)
                             setQuantity(1)  // reset default quantity
                         }}

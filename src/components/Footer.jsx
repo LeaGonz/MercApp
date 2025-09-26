@@ -1,9 +1,10 @@
 import { useTranslation } from "react-i18next"
+import { formatCurrency } from "../utils/currencyFormat"
 import { NavLink } from "react-router-dom"
-import { Home, Search, User, Settings, Info, Mail, Heart } from "lucide-react"
+import { Home, Settings, Info, Mail, ShoppingCart } from "lucide-react"
 import { useCartContext } from "../context/CartContext"
 
-export default function Footer() {
+export default function Footer({ onCartOpen }) {
 
     const { t } = useTranslation()
     const { totalCart, clearCart } = useCartContext()
@@ -40,13 +41,15 @@ export default function Footer() {
                                 </span>
                             </span>
                         )}
-
                     </NavLink>
                 ))}
-                <span className="flex flex-col items-center justify-center">
-                    <button className="bg-green-200 p-1 rounded-xl">{totalCart.toFixed(2)} 🛒</button>
-                    <button className="bg-red-400 p-1 rounded-xl" onClick={clearCart}>Clean</button>
-                </span>
+                <button
+                    onClick={onCartOpen}
+                    className="flex flex-col items-center justify-center text-green-600"
+                >
+                    <ShoppingCart className="w-7 h-7" />
+                    <span className="text-xs">{formatCurrency(totalCart)}</span>
+                </button>
             </nav >
 
         </footer>

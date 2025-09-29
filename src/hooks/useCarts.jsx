@@ -126,25 +126,24 @@ export function useCarts() {
     const removeFromCart = (productId, price) => {
         setCarts(prev => {
             const pendingCartIndex = prev.findIndex(cart => cart.status === "pending")
-            if (pendingCartIndex === -1) return prev
+            if (pendingCartIndex === -1) return prev // no pending cart
 
             const cartsCopy = [...prev]
             const cart = cartsCopy[pendingCartIndex]
 
-            const newProducts = cart.products.map(p => {
-                if (p.id === productId && p.price === price) {
-                    return { ...p, quantity: p.quantity - 1 }
-                }
+            const filterProducts = cart.products.map(p => {
+                if (p.id === productId && p.price === price) return { ...p, quantity: p.quantity - 1 }
                 return p
-            }).filter(p => p.quantity > 0) // elimina productos con quantity 0
+            }).filter(p => p.quantity > 0)
 
             cartsCopy[pendingCartIndex] = {
                 ...cart,
-                products: newProducts,
-                total: calculateTotal(newProducts)
+                products: filterProducts,
+                total: calculateTotal(filterProducts)
             }
 
             return cartsCopy
+
         })
     }
 

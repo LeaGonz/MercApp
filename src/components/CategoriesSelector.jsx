@@ -2,7 +2,7 @@ export default function CategoriesSelector({ categories, currentCategory, label,
 
     // UI categories classes
     const cateBase = "flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium transition"
-    const cateActive = "bg-green-700 text-white shadow-lg"
+    const cateActive = "bg-green-700 text-white"
     const cateInactive = "bg-white/90 text-gray-800 border border-white/20 hover:bg-green-50"
 
     // UI Contagem

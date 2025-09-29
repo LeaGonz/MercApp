@@ -4,7 +4,7 @@ import { formatCurrency } from "../utils/currencyFormat"
 
 export default function Cart({ isOpen, onClose }) {
 
-    const { activeCart, clearCart, removeFromCart } = useCartContext()
+    const { activeCart, clearCart, removeFromCart, totalCart } = useCartContext()
 
     return (
         <>
@@ -17,7 +17,7 @@ export default function Cart({ isOpen, onClose }) {
 
             {/* Cart panel */}
             <div
-                className={`fixed top-0 right-0 h-full w-xs sm:w-96 bg-white shadow-2xl z-50 flex flex-col transition-transform duration-300 ease-out ${isOpen ? "translate-x-0" : "translate-x-full"
+                className={`fixed top-0 right-0 h-full w-xs sm:w-120 bg-white shadow-2xl z-50 flex flex-col transition-transform duration-300 ease-out ${isOpen ? "translate-x-0" : "translate-x-full"
                     }`}
             >
                 {/* Header */}
@@ -90,7 +90,8 @@ export default function Cart({ isOpen, onClose }) {
                             <div></div>
                         )}
                 </div>
-                <button className="bg-red-400 p-1 rounded-xl" onClick={clearCart}>Clean</button>
+                <span className="text-2xl text-right bg-green-200">Total de compra {formatCurrency(totalCart)}</span>
+                <button className="bg-red-400 p-1 rounded-xl mt-2" onClick={clearCart}>Clean</button>
 
             </div>
         </>

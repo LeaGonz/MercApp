@@ -7,7 +7,7 @@ import { useCartContext } from "../context/CartContext"
 export default function Footer({ onCartOpen }) {
 
     const { t } = useTranslation()
-    const { totalCart, clearCart } = useCartContext()
+    const { totalCart } = useCartContext()
 
     // Menu options
     const MENU = [
@@ -18,8 +18,7 @@ export default function Footer({ onCartOpen }) {
     ]
 
     return (
-        <footer className="bg-white/70 backdrop-blur-xl pt-safe-bottom p-2 flex-shrink-0 
-        border-t border-white/20 shadow-inner z-50">
+        <footer className="bg-white/90 backdrop-blur-xl border-t border-white/20 shadow-inner flex-shrink-0 z-50">
 
             <nav className="flex justify-around items-center">
                 {/* Menu options */}

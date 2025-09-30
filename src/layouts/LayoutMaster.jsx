@@ -9,7 +9,7 @@ export default function LayoutMaster() {
     const [isCartOpen, setIsCartOpen] = useState(false)
 
     return (
-        <div className="fixed inset-0 flex flex-col bg-gradient-to-br from-green-100 to-indigo-100">
+        <div className="flex flex-col fixed inset-0 bg-gradient-to-br from-green-100 to-indigo-100">
 
             <Header />
 

@@ -15,11 +15,25 @@
     "description": "Podes falar connosco através desta página."
   },
   "notfound": {
+    "label": "Página não encontrada",
     "title": "Página não encontrada",
     "message": "Oops! O conteúdo que procuras não existe."
   },
   "categories": {
     "allLabel": "Tudo",
     "searchBar": "Procurar produtos..."
+  },
+  "cart": {
+    "label": "Cart",
+    "title": "Meu Carrinho",
+    "emptyMsg": "O teu carrinho está vazio",
+    "emptyMsg2": "Adiciona produtos para começar",
+    "total": "Total",
+    "clearMsg": {
+      "title": "¿Estás seguro?",
+      "description": "Isto esvaziará todo o teu carrinho e não se poderá desfazer.",
+      "clear": "Limpar",
+      "cancel": "Cancelar"
+    }
   }
 }

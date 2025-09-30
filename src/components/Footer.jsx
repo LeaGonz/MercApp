@@ -20,7 +20,7 @@ export default function Footer({ onCartOpen }) {
     return (
         <footer className="bg-white/90 backdrop-blur-xl border-t border-white/20 shadow-inner flex-shrink-0 z-50">
 
-            <nav className="flex justify-around items-center">
+            <nav className="flex items-center justify-around">
                 {/* Menu options */}
                 {MENU.map((item) => (
                     <NavLink key={item.to} to={item.to}>
@@ -42,15 +42,18 @@ export default function Footer({ onCartOpen }) {
                         )}
                     </NavLink>
                 ))}
-                <button
-                    onClick={onCartOpen}
-                    className="flex flex-col items-center justify-center text-green-600"
-                >
-                    <ShoppingCart className="w-7 h-7" />
-                    <span className="text-xs">{formatCurrency(totalCart)}</span>
-                </button>
+
+                {/* Cart button */}
+                <span className="flex flex-col p-3 text-xs text-green-600 w-16 cursor-pointer">
+                    <ShoppingCart
+                        onClick={onCartOpen}
+                        className="w-7 h-7"
+                    />
+                    <span>{formatCurrency(totalCart)}</span>
+                </span>
+
             </nav >
 
-        </footer>
+        </footer >
     )
 }

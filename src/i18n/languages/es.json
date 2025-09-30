@@ -21,5 +21,18 @@
   "categories": {
     "allLabel": "Todo",
     "searchBar": "Buscar productos..."
+  },
+  "cart": {
+    "label": "Cart",
+    "title": "Mi Carrito",
+    "emptyMsg": "Tu carrito está vacío",
+    "emptyMsg2": "Agrega productos para comenzar",
+    "total": "Total",
+    "clearMsg": {
+      "title": "¿Estás seguro?",
+      "description": "Esto vaciará todo tu carrito y no se podrá deshacer.",
+      "clear": "Limpiar",
+      "cancel": "Cancelar"
+    }
   }
 }

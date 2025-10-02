@@ -114,7 +114,7 @@ export default function ProductCard({ product }) {
                 {isEditingPrice ? (
                     <input
                         type="number"
-                        inputMode="numeric"
+                        inputMode="decimal"
                         value={tempPrice}
                         onChange={priceOnChange}
                         onKeyDown={priceKeyDown}

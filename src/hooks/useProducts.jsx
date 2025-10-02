@@ -9,7 +9,6 @@ const PRODUCTS_JSON = "/data/products.json"
 const LOCALSTORAGE_KEY = "mercapp_products"
 
 export function useProducts() {
-
     // Read products from localStorage or initialize as empty
     const [products, setProducts] = useState(() => {
         try {
@@ -95,10 +94,16 @@ export function useProducts() {
 
     // Categories list
     const categories = products ? Array.from(new Set(products.map(p => p.category))).sort() : []
+    // Unit list
+    const units = products ? Array.from(new Set(products.map(p => p.unit))) : []
+    // Stores list
+    const stores = products ? Array.from(new Set(products.map(p => p.store))).sort() : []
 
     return {
         products,
         categories,
+        units,
+        stores,
         loading,
         error,
         updatePrice,

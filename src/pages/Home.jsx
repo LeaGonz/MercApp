@@ -4,7 +4,7 @@ import { useMemo, useState } from "react"
 import ProductCard from "../components/ProductCard"
 import SearchBar from "../components/SearchBar"
 import CategoriesSelector from "../components/CategoriesSelector"
-import Cart from "../pages/Cart"
+import NewProduct from "../components/NewProduct"
 
 export default function Home() {
     const { t } = useTranslation()
@@ -57,6 +57,9 @@ export default function Home() {
                 </div>
             )
             }
+
+            {/* FAB new product */}
+            <NewProduct />
         </div >
     )
 }

@@ -11,8 +11,8 @@ export default function Footer({ onCartOpen }) {
 
     // Menu options
     const MENU = [
-        { to: "/about", label: "about", Icon: Info },
         { to: "/", label: "home", Icon: Home },
+        // { to: "/about", label: "about", Icon: Info },
         { to: "/contact", label: "contact", Icon: Mail },
         { to: "/settings", label: "contact", Icon: Settings },
     ]

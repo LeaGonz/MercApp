@@ -35,5 +35,16 @@
       "clear": "Limpar",
       "cancel": "Cancelar"
     }
+  },
+  "product": {
+    "new": "Novo Produto",
+    "name": "Nome",
+    "category": "Categoria",
+    "unit": "Unidade",
+    "price": "Preço",
+    "image": "Emoji",
+    "store": "Loja",
+    "cancel": "Cancelar",
+    "add": "Adicionar"
   }
 }

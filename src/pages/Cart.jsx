@@ -125,8 +125,14 @@ export default function Cart({ isOpen, onClose }) {
 
             {/* Clear confirmation modal */}
             {confirmClear && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm">
-                    <div className="bg-white rounded-xl shadow-xl p-6 w-11/12 max-w-sm">
+                <div
+                    onClick={() => setConfirmClear(false)}
+                    className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm"
+                >
+                    <div
+                        onClick={e => e.stopPropagation()}
+                        className="bg-white rounded-xl shadow-xl p-6 w-11/12 max-w-sm"
+                    >
 
                         <h3 className="text-lg font-semibold mb-4">{t("cart.clearMsg.title")}</h3>
 

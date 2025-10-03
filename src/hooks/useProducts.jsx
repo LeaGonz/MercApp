@@ -73,6 +73,11 @@ export function useProducts() {
 
     const addProduct = (newProduct) => {
         console.log("Adding product", newProduct)
+        setProducts(prev => {
+            const updated = [...prev, newProduct]
+            updateLocalStorage(updated)
+            return updated
+        })
     }
 
     const updatePrice = (productId, newPrice) => {

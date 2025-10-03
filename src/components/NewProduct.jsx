@@ -32,6 +32,7 @@ export default function NewProduct() {
         store: false
     })
 
+    // Handle add product
     const handleAddProduct = () => {
         // Validate
         const Errors = {
@@ -44,6 +45,7 @@ export default function NewProduct() {
         setErrors(Errors)
         if (Object.values(Errors).includes(true)) return
 
+        // Normalize and send to product hook
         const newProduct = {
             id: getNextId(products),
             name: productData.name.trim(),
@@ -57,8 +59,31 @@ export default function NewProduct() {
 
         addProduct(newProduct)
 
+        handleCloseModal()
     }
 
+    // Reset form and close modal
+    const handleCloseModal = () => {
+        // Clear form and close modal
+        setProductData({
+            name: "",
+            category: categories[0] || "",
+            unit: units[0] || "",
+            price: 0,
+            image: "",
+            store: stores[0] || ""
+        })
+
+        setErrors({
+            name: false,
+            category: false,
+            price: false,
+            unit: false,
+            store: false
+        })
+
+        setModalAddProduct(false)
+    }
     // Function to get the next available ID
     const getNextId = (products) => {
         if (!products || products.length === 0) return 1
@@ -73,15 +98,20 @@ export default function NewProduct() {
             <button
                 onClick={() => setModalAddProduct(true)}
                 aria-label="Add new product"
-                className="fixed bottom-20 right-3.5 bg-green-600 p-4 rounded-full  shadow-2xl hover:bg-green-700 active:scale-95 transition-all duration-150 cursor-pointer z-50"
+                className="fixed bottom-27 bg-green-600 p-4 rounded-full  shadow-2xl hover:bg-green-700 active:scale-95 transition-all duration-150 cursor-pointer z-50"
             >
-                <Plus className="w-6 h-6 text-white" />
+                <Plus className="w-4 h-4 text-white" />
             </button>
 
             {/* Add New Product Modal */}
             {modalAddProduct && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm">
-                    <div className="bg-white rounded-xl shadow-xl w-11/12 max-w-sm mb-20">
+                <div
+                    onClick={handleCloseModal}
+                    className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm"
+                >
+                    <div
+                        onClick={e => e.stopPropagation()}
+                        className="bg-white rounded-xl shadow-xl w-11/12 max-w-sm mb-20">
 
                         {/* Header */}
                         <div className="flex items-center justify-between p-5 border-b border-gray-300">
@@ -93,7 +123,7 @@ export default function NewProduct() {
 
                             {/* Close button */}
                             <X
-                                onClick={() => setModalAddProduct(false)}
+                                onClick={handleCloseModal}
                                 aria-label="Close cart"
                                 className="w-9 h-9 p-2 rounded-full bg-gray-100 hover:bg-green-700 hover:text-white transition-colors duration-100"
                             />
@@ -114,6 +144,7 @@ export default function NewProduct() {
                                     onChange={e => setProductData({ ...productData, name: e.target.value })}
                                     placeholder="Ex: Arroz"
                                     className={`${inputCSS}  ${errors.name ? " border-red-500" : ""}`}
+                                    autoFocus
                                 />
                             </div>
 
@@ -220,7 +251,7 @@ export default function NewProduct() {
                         {/* Buttons */}
                         <div className="flex items-center justify-between bg-gray-50/80 gap-2 p-3 border-t border-gray-300 rounded-b-xl">
                             <button
-                                onClick={() => setModalAddProduct(false)}
+                                onClick={handleCloseModal}
                                 className="flex-1 px-4 py-2 rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-100 transition-colors"
                             >
                                 {t("product.cancel")}

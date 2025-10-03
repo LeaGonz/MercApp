@@ -4,353 +4,553 @@
     "products": [
         {
             "id": 1,
+            "name": "Abacate Hass",
+            "category": "🥕 Vegetais",
+            "unit": "kg",
+            "price": 2.38,
+            "currency": "EUR",
+            "image": "🥑",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 2,
+            "name": "Coentros",
+            "category": "🥕 Vegetais",
+            "unit": "unid",
+            "price": 1.98,
+            "currency": "EUR",
+            "image": "🌿",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 3,
+            "name": "Espinafres",
+            "category": "🥕 Vegetais",
+            "unit": "unid",
+            "price": 1.19,
+            "currency": "EUR",
+            "image": "🥬",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 4,
+            "name": "Batata Assar",
+            "category": "🥕 Vegetais",
+            "unit": "kg",
+            "price": 2.19,
+            "currency": "EUR",
+            "image": "🥔",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 5,
+            "name": "Alho Francês",
+            "category": "🥕 Vegetais",
+            "unit": "kg",
+            "price": 1.99,
+            "currency": "EUR",
+            "image": "🥬",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 6,
+            "name": "Salada Alentejana",
+            "category": "🥕 Vegetais",
+            "unit": "unid",
+            "price": 1.39,
+            "currency": "EUR",
+            "image": "🥗",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 7,
+            "name": "Tomate",
+            "category": "🥕 Vegetais",
+            "unit": "kg",
+            "price": 1.17,
+            "currency": "EUR",
+            "image": "🍅",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 8,
+            "name": "Uvas",
+            "category": "🍎 Frutas",
+            "unit": "kg",
+            "price": 2.39,
+            "currency": "EUR",
+            "image": "🍇",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 9,
+            "name": "Limão",
+            "category": "🍎 Frutas",
+            "unit": "kg",
+            "price": 1.93,
+            "currency": "EUR",
+            "image": "🍋",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 10,
+            "name": "Croissant",
+            "category": "🥐 Padaria",
+            "unit": "unid",
+            "price": 0.50,
+            "currency": "EUR",
+            "image": "🥐",
+            "store": "Lidl"
+        },
+        {
+            "id": 11,
+            "name": "Pão Rústico Branco",
+            "category": "🥐 Padaria",
+            "unit": "unid",
+            "price": 2.79,
+            "currency": "EUR",
+            "image": "🍞",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 12,
+            "name": "Bebida Amêndoa",
+            "category": "🥛 Bebidas",
+            "unit": "lts",
+            "price": 1.57,
+            "currency": "EUR",
+            "image": "🥛",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 13,
+            "name": "Bebida Aveia",
+            "category": "🥛 Bebidas",
+            "unit": "lts",
+            "price": 0.99,
+            "currency": "EUR",
+            "image": "🥛",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 14,
+            "name": "Vinho Branco Verde",
+            "category": "🥛 Bebidas",
+            "unit": "unid",
+            "price": 1.20,
+            "currency": "EUR",
+            "image": "🍷",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 15,
+            "name": "Leite Meio Gordo",
+            "category": "🥛 Bebidas",
+            "unit": "lts",
+            "price": 0.86,
+            "currency": "EUR",
+            "image": "🥛",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 16,
+            "name": "Frango Peito",
+            "category": "🥩 Talho",
+            "unit": "kg",
+            "price": 10.09,
+            "currency": "EUR",
+            "image": "🍗",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 17,
+            "name": "Carne Picada Mista",
+            "category": "🥩 Talho",
+            "unit": "kg",
+            "price": 9.56,
+            "currency": "EUR",
+            "image": "🥩",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 18,
+            "name": "Asas de Frango",
+            "category": "🥩 Talho",
+            "unit": "kg",
+            "price": 4.83,
+            "currency": "EUR",
+            "image": "🍗",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 19,
+            "name": "Bife de Perú",
+            "category": "🥩 Talho",
+            "unit": "kg",
+            "price": 4.48,
+            "currency": "EUR",
+            "image": "🥩",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 20,
+            "name": "Atum Natural",
+            "category": "🐟 Peixaria",
+            "unit": "unid",
+            "price": 0.74,
+            "currency": "EUR",
+            "image": "🐟",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 21,
             "name": "Arroz Basmati",
             "category": "🍽️ Mercearia",
             "unit": "kg",
             "price": 1.99,
             "currency": "EUR",
             "image": "🍚",
-            "store": "Pingo Doce"
-        },
-        {
-            "id": 2,
-            "name": "Salmão",
-            "category": "🐟 Peixaria",
-            "unit": "kg",
-            "price": 1,
-            "currency": "EUR",
-            "image": "🐟",
-            "store": "Outra"
-        },
-        {
-            "id": 3,
-            "name": "Salada",
-            "category": "🥕 Vegetais",
-            "unit": "unid",
-            "price": 0.99,
-            "currency": "EUR",
-            "image": "🥗",
-            "store": "Outra"
-        },
-        {
-            "id": 4,
-            "name": "Lentilhas",
-            "category": "🍽️ Mercearia",
-            "unit": "kg",
-            "price": 1,
-            "currency": "EUR",
-            "image": "🫘",
-            "store": "Outra"
-        },
-        {
-            "id": 5,
-            "name": "Ovos",
-            "category": "🍽️ Mercearia",
-            "unit": "dúzia",
-            "price": 1,
-            "currency": "EUR",
-            "image": "🥚",
-            "store": "Outra"
-        },
-        {
-            "id": 6,
-            "name": "Gel de Banho",
-            "category": "🛁 Higiene",
-            "unit": "unid",
-            "price": 1,
-            "currency": "EUR",
-            "image": "🧼",
-            "store": "Outra"
-        },
-        {
-            "id": 7,
-            "name": "Pão Rústico Bimbo",
-            "category": "🥐 Padaria",
-            "unit": "unid",
-            "price": 1,
-            "currency": "EUR",
-            "image": "🥖",
-            "store": "Outra"
-        },
-        {
-            "id": 8,
-            "name": "Azeite",
-            "category": "🍽️ Mercearia",
-            "unit": "lts",
-            "price": 1,
-            "currency": "EUR",
-            "image": "🫒",
-            "store": "Outra"
-        },
-        {
-            "id": 9,
-            "name": "Detergente Roupa",
-            "category": "🧹 Limpeza",
-            "unit": "lts",
-            "price": 1,
-            "currency": "EUR",
-            "image": "🧴",
-            "store": "Outra"
-        },
-        {
-            "id": 10,
-            "name": "Atum",
-            "category": "🍽️ Mercearia",
-            "unit": "lata",
-            "price": 1,
-            "currency": "EUR",
-            "image": "🐟",
-            "store": "Outra"
-        },
-        {
-            "id": 11,
-            "name": "Tomate",
-            "category": "🥕 Vegetais",
-            "unit": "kg",
-            "price": 1,
-            "currency": "EUR",
-            "image": "🍅",
-            "store": "Outra"
-        },
-        {
-            "id": 12,
-            "name": "Feijão preto",
-            "category": "🍽️ Mercearia",
-            "unit": "kg",
-            "price": 1,
-            "currency": "EUR",
-            "image": "🫘",
             "store": "Lidl"
         },
         {
-            "id": 13,
-            "name": "Batata Assar",
-            "category": "🥕 Vegetais",
-            "unit": "kg",
-            "price": 1,
-            "currency": "EUR",
-            "image": "🥔",
-            "store": "Outra"
-        },
-        {
-            "id": 14,
-            "name": "Pasta de Dentes",
-            "category": "🛁 Higiene",
-            "unit": "unid",
-            "price": 1,
-            "currency": "EUR",
-            "image": "🪥",
-            "store": "Outra"
-        },
-        {
-            "id": 15,
-            "name": "Pimentão",
-            "category": "🥕 Vegetais",
-            "unit": "kg",
-            "price": 1,
-            "currency": "EUR",
-            "image": "🫑",
-            "store": "Outra"
-        },
-        {
-            "id": 16,
-            "name": "Sal Fino",
+            "id": 22,
+            "name": "Harina Pan",
             "category": "🍽️ Mercearia",
             "unit": "kg",
-            "price": 1,
-            "currency": "EUR",
-            "image": "🧂",
-            "store": "Outra"
-        },
-        {
-            "id": 17,
-            "name": "Abacate Hass",
-            "category": "🥕 Vegetais",
-            "unit": "kg",
-            "price": 1,
-            "currency": "EUR",
-            "image": "🥑",
-            "store": "Outra"
-        },
-        {
-            "id": 18,
-            "name": "Peito Frango",
-            "category": "🥩 Talho",
-            "unit": "kg",
-            "price": 1,
-            "currency": "EUR",
-            "image": "🍗",
-            "store": "Outra"
-        },
-        {
-            "id": 19,
-            "name": "Milho Doce",
-            "category": "🍽️ Mercearia",
-            "unit": "lata",
-            "price": 1,
+            "price": 1.20,
             "currency": "EUR",
             "image": "🌽",
-            "store": "Outra"
-        },
-        {
-            "id": 20,
-            "name": "Cenoura",
-            "category": "🥕 Vegetais",
-            "unit": "kg",
-            "price": 1,
-            "currency": "EUR",
-            "image": "🥕",
-            "store": "Outra"
-        },
-        {
-            "id": 21,
-            "name": "Vinho",
-            "category": "🥛 Bebidas",
-            "unit": "garrafa",
-            "price": 1,
-            "currency": "EUR",
-            "image": "🍷",
-            "store": "Outra"
-        },
-        {
-            "id": 22,
-            "name": "Alho Francês",
-            "category": "🥕 Vegetais",
-            "unit": "kg",
-            "price": 1,
-            "currency": "EUR",
-            "image": "🥬",
-            "store": "Outra"
+            "store": "Mercadona"
         },
         {
             "id": 23,
-            "name": "Grão Bico",
+            "name": "Queijo Grana Padano",
             "category": "🍽️ Mercearia",
-            "unit": "kg",
-            "price": 1,
+            "unit": "unid",
+            "price": 3.49,
             "currency": "EUR",
-            "image": "🫘",
-            "store": "Outra"
+            "image": "🧀",
+            "store": "Pingo Doce"
         },
         {
             "id": 24,
-            "name": "Leite Amêndoa",
-            "category": "🥛 Bebidas",
-            "unit": "lts",
-            "price": 1,
+            "name": "Ovos M",
+            "category": "🍽️ Mercearia",
+            "unit": "unid",
+            "price": 4.99,
             "currency": "EUR",
-            "image": "🥛",
-            "store": "Outra"
+            "image": "🥚",
+            "store": "Pingo Doce"
         },
         {
             "id": 25,
-            "name": "Papel Higiénico",
-            "category": "🛁 Higiene",
-            "unit": "pack",
-            "price": 1,
+            "name": "Infusão Camomila",
+            "category": "🍽️ Mercearia",
+            "unit": "unid",
+            "price": 1.49,
             "currency": "EUR",
-            "image": "🧻",
-            "store": "Outra"
+            "image": "🍵",
+            "store": "Pingo Doce"
         },
         {
             "id": 26,
-            "name": "Asas Frango",
-            "category": "🥩 Talho",
-            "unit": "kg",
-            "price": 1,
+            "name": "Maple",
+            "category": "🍽️ Mercearia",
+            "unit": "unid",
+            "price": 4.29,
             "currency": "EUR",
-            "image": "🍗",
-            "store": "Outra"
+            "image": "🍯",
+            "store": "Pingo Doce"
         },
         {
             "id": 27,
-            "name": "Carne Picada",
-            "category": "🥩 Talho",
-            "unit": "kg",
-            "price": 1,
+            "name": "Massa Esparguete",
+            "category": "🍽️ Mercearia",
+            "unit": "unid",
+            "price": 0.75,
             "currency": "EUR",
-            "image": "🥩",
-            "store": "Outra"
+            "image": "🍝",
+            "store": "Pingo Doce"
         },
         {
             "id": 28,
-            "name": "Manteiga",
+            "name": "Massa Aletria",
             "category": "🍽️ Mercearia",
             "unit": "unid",
-            "price": 1,
+            "price": 1.15,
             "currency": "EUR",
-            "image": "🧈",
-            "store": "Outra"
+            "image": "🍝",
+            "store": "Pingo Doce"
         },
         {
             "id": 29,
-            "name": "Polpa Tomate",
+            "name": "Azeite",
             "category": "🍽️ Mercearia",
-            "unit": "embalagem",
-            "price": 1,
+            "unit": "lts",
+            "price": 4.69,
             "currency": "EUR",
-            "image": "🥫",
-            "store": "Outra"
+            "image": "🫒",
+            "store": "Pingo Doce"
         },
         {
             "id": 30,
-            "name": "Rojões Porco",
-            "category": "🥩 Talho",
-            "unit": "kg",
-            "price": 1,
+            "name": "Quinoa",
+            "category": "🍽️ Mercearia",
+            "unit": "unid",
+            "price": 2.69,
             "currency": "EUR",
-            "image": "🥓",
-            "store": "Outra"
+            "image": "🌾",
+            "store": "Pingo Doce"
         },
         {
             "id": 31,
-            "name": "Leite Aveia",
-            "category": "🥛 Bebidas",
-            "unit": "lts",
-            "price": 1,
+            "name": "Chia",
+            "category": "🍽️ Mercearia",
+            "unit": "unid",
+            "price": 3.49,
             "currency": "EUR",
-            "image": "🥛",
-            "store": "Outra"
+            "image": "🌱",
+            "store": "Pingo Doce"
         },
         {
             "id": 32,
-            "name": "Esparguete",
+            "name": "Grão de Bico",
             "category": "🍽️ Mercearia",
-            "unit": "kg",
-            "price": 1,
+            "unit": "unid",
+            "price": 1.70,
             "currency": "EUR",
-            "image": "🍝",
-            "store": "Outra"
+            "image": "🥙",
+            "store": "Pingo Doce"
         },
         {
             "id": 33,
-            "name": "Coentros",
-            "category": "🥕 Vegetais",
-            "unit": "molho",
-            "price": 1,
+            "name": "Milho Doce",
+            "category": "🍽️ Mercearia",
+            "unit": "unid",
+            "price": 1.99,
             "currency": "EUR",
-            "image": "🌿",
-            "store": "Outra"
+            "image": "🌽",
+            "store": "Pingo Doce"
         },
         {
             "id": 34,
-            "name": "Guardanapos",
-            "category": "🧹 Limpeza",
-            "unit": "pack",
-            "price": 1,
+            "name": "Harina Pan",
+            "category": "🍽️ Mercearia",
+            "unit": "kg",
+            "price": 2.65,
             "currency": "EUR",
-            "image": "🧻",
-            "store": "Outra"
+            "image": "🌽",
+            "store": "Pingo Doce"
         },
         {
             "id": 35,
-            "name": "Bananas",
-            "category": "🍎 Frutas",
+            "name": "Flocos de Aveia",
+            "category": "🍽️ Mercearia",
+            "unit": "unid",
+            "price": 0.89,
+            "currency": "EUR",
+            "image": "🥣",
+            "store": "Outra"
+        },
+        {
+            "id": 36,
+            "name": "Lentilhas",
+            "category": "🍽️ Mercearia",
+            "unit": "unid",
+            "price": 1.98,
+            "currency": "EUR",
+            "image": "🍲",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 37,
+            "name": "Café Moído",
+            "category": "🍽️ Mercearia",
+            "unit": "unid",
+            "price": 3.49,
+            "currency": "EUR",
+            "image": "☕",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 38,
+            "name": "Queijo",
+            "category": "🍽️ Mercearia",
+            "unit": "unid",
+            "price": 2.99,
+            "currency": "EUR",
+            "image": "🧀",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 39,
+            "name": "Lâmina Homem",
+            "category": "🛁 Higiene",
+            "unit": "unid",
+            "price": 3.99,
+            "currency": "EUR",
+            "image": "🪒",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 40,
+            "name": "Pasta de Dentes",
+            "category": "🛁 Higiene",
+            "unit": "unid",
+            "price": 2.99,
+            "currency": "EUR",
+            "image": "🦷",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 41,
+            "name": "Gel de Banho",
+            "category": "🛁 Higiene",
+            "unit": "unid",
+            "price": 3.39,
+            "currency": "EUR",
+            "image": "🧴",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 42,
+            "name": "Papel Higiénico",
+            "category": "🧹 Limpeza",
+            "unit": "unid",
+            "price": 3.79,
+            "currency": "EUR",
+            "image": "🧻",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 43,
+            "name": "Rolo Cozinha",
+            "category": "🧹 Limpeza",
+            "unit": "unid",
+            "price": 0.99,
+            "currency": "EUR",
+            "image": "🧻",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 44,
+            "name": "Esfregão Fibra Verde",
+            "category": "🧹 Limpeza",
+            "unit": "unid",
+            "price": 0.45,
+            "currency": "EUR",
+            "image": "🧽",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 45,
+            "name": "Ambientador Sticks",
+            "category": "🧹 Limpeza",
+            "unit": "unid",
+            "price": 2.79,
+            "currency": "EUR",
+            "image": "🌸",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 46,
+            "name": "Lenços de Bolso",
+            "category": "🧹 Limpeza",
+            "unit": "unid",
+            "price": 1.19,
+            "currency": "EUR",
+            "image": "🧻",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 47,
+            "name": "Sal Fino",
+            "category": "🧹 Limpeza",
+            "unit": "unid",
+            "price": 0.29,
+            "currency": "EUR",
+            "image": "🧂",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 48,
+            "name": "Pano Multiusos",
+            "category": "🧹 Limpeza",
+            "unit": "unid",
+            "price": 0.90,
+            "currency": "EUR",
+            "image": "🧻",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 49,
+            "name": "Guardanapos",
+            "category": "🧹 Limpeza",
+            "unit": "unid",
+            "price": 0.55,
+            "currency": "EUR",
+            "image": "🍽️",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 50,
+            "name": "Esfregão Inox",
+            "category": "🧹 Limpeza",
+            "unit": "unid",
+            "price": 0.89,
+            "currency": "EUR",
+            "image": "🧽",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 51,
+            "name": "Rolo Adesivo Tira Pêlos",
+            "category": "🧹 Limpeza",
+            "unit": "unid",
+            "price": 1.39,
+            "currency": "EUR",
+            "image": "🧥",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 52,
+            "name": "Bloco Sanitário",
+            "category": "🧹 Limpeza",
             "unit": "unid",
             "price": 1.29,
             "currency": "EUR",
-            "image": "🍌",
+            "image": "🚽",
             "store": "Pingo Doce"
+        },
+        {
+            "id": 53,
+            "name": "Detergente Roupa",
+            "category": "🧹 Limpeza",
+            "unit": "unid",
+            "price": 4.38,
+            "currency": "EUR",
+            "image": "🧴",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 54,
+            "name": "Toalhitas WC",
+            "category": "🧹 Limpeza",
+            "unit": "unid",
+            "price": 1.39,
+            "currency": "EUR",
+            "image": "🧻",
+            "store": "Pingo Doce"
+        },
+        {
+            "id": 55,
+            "name": "Banana",
+            "category": "🍎 Frutas",
+            "unit": "kg",
+            "price": 1.20,
+            "currency": "EUR",
+            "image": "🍌",
+            "store": "Outra"
         }
     ]
 }

@@ -7,5 +7,5 @@ export default defineConfig({
   plugins: [
     react(), // habilita JSX e funcionalidades React
     tailwindcss()], // integra Tailwind com o vite
-  base: 'MercApp'
+  base: '/MercApp/'
 })

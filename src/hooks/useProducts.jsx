@@ -71,6 +71,10 @@ export function useProducts() {
         }
     }
 
+    const addProduct = (newProduct) => {
+        console.log("Adding product", newProduct)
+    }
+
     const updatePrice = (productId, newPrice) => {
         setProducts(prev => {
             const updated = prev.map(p =>
@@ -97,7 +101,7 @@ export function useProducts() {
     // Unit list
     const units = products ? Array.from(new Set(products.map(p => p.unit))) : []
     // Stores list
-    const stores = products ? Array.from(new Set(products.map(p => p.store))).sort() : []
+    const stores = products ? Array.from(new Set(products.map(p => p.store))) : []
 
     return {
         products,
@@ -106,6 +110,7 @@ export function useProducts() {
         stores,
         loading,
         error,
+        addProduct,
         updatePrice,
         refreshBtn
     }

@@ -8,7 +8,7 @@ export default function NewProduct() {
     const { t } = useTranslation()
 
     // Products context
-    const { products, categories, units, stores } = useProductsContext()
+    const { addProduct, products, categories, units, stores } = useProductsContext()
 
     // Modal state
     const [modalAddProduct, setModalAddProduct] = useState(false)
@@ -36,9 +36,26 @@ export default function NewProduct() {
         // Validate
         const Errors = {
             name: !productData.name.trim(),
+            category: !categories.includes(productData.category),
+            price: isNaN(productData.price) || Number(productData.price) < 0,
+            unit: !units.includes(productData.unit),
+            store: !stores.includes(productData.store)
         }
-        setNameError(!productData.name.trim())
-        setPriceError(isNaN(productData.price) || Number(productData.price) < 0)
+        setErrors(Errors)
+        if (Object.values(Errors).includes(true)) return
+
+        const newProduct = {
+            id: getNextId(products),
+            name: productData.name.trim(),
+            category: productData.category,
+            unit: productData.unit,
+            price: Number(productData.price),
+            currency: "EUR",
+            image: productData.image.trim(),
+            store: productData.store
+        }
+
+        addProduct(newProduct)
 
     }
 
@@ -53,15 +70,13 @@ export default function NewProduct() {
 
     return (
         <>
-            <div
-                className="fixed bottom-20 right-3.5 bg-green-600 text-white p-4 rounded-full  shadow-2xl hover:bg-green-700 active:scale-95 transition-all duration-150 z-50"
+            <button
+                onClick={() => setModalAddProduct(true)}
+                aria-label="Add new product"
+                className="fixed bottom-20 right-3.5 bg-green-600 p-4 rounded-full  shadow-2xl hover:bg-green-700 active:scale-95 transition-all duration-150 cursor-pointer z-50"
             >
-                <Plus
-                    onClick={() => setModalAddProduct(true)}
-                    aria-label="Add new product"
-                    className="w-6 h-6"
-                />
-            </div>
+                <Plus className="w-6 h-6 text-white" />
+            </button>
 
             {/* Add New Product Modal */}
             {modalAddProduct && (
@@ -95,10 +110,10 @@ export default function NewProduct() {
 
                                 <input
                                     type="text"
-                                    value=""
-                                    // onChange={e =>}
+                                    value={productData.name}
+                                    onChange={e => setProductData({ ...productData, name: e.target.value })}
                                     placeholder="Ex: Arroz"
-                                    className={inputCSS + (nameError ? " border-red-500" : "")}
+                                    className={`${inputCSS}  ${errors.name ? " border-red-500" : ""}`}
                                 />
                             </div>
 
@@ -110,8 +125,8 @@ export default function NewProduct() {
 
                                 <select
                                     type="text"
-                                    value=""
-                                    // onChange={e =>}
+                                    value={productData.category}
+                                    onChange={e => setProductData({ ...productData, category: e.target.value })}
                                     placeholder="Ex: Mercearia"
                                     className={inputCSS}
                                 >
@@ -133,10 +148,10 @@ export default function NewProduct() {
                                     <input
                                         type="number"
                                         inputMode="decimal"
-                                        value=""
-                                        // onChange={e =>}
+                                        value={productData.price}
+                                        onChange={e => setProductData({ ...productData, price: e.target.value })}
                                         placeholder="Ex: 1.99"
-                                        className={inputCSS + (priceError ? " border-red-500" : "")}
+                                        className={`${inputCSS}  ${errors.price ? " border-red-500" : ""}`}
                                     />
                                 </div>
 
@@ -148,8 +163,8 @@ export default function NewProduct() {
 
                                     <select
                                         type="text"
-                                        value=""
-                                        // onChange={e =>}
+                                        value={productData.unit}
+                                        onChange={e => setProductData({ ...productData, unit: e.target.value })}
                                         placeholder="Ex: kg"
                                         className={inputCSS}
                                     >
@@ -171,8 +186,8 @@ export default function NewProduct() {
 
                                     <select
                                         type="text"
-                                        value=""
-                                        // onChange={e =>}
+                                        value={productData.store}
+                                        onChange={e => setProductData({ ...productData, store: e.target.value })}
                                         placeholder="Ex: Pingo Doce"
                                         className={inputCSS}
                                     >
@@ -192,8 +207,8 @@ export default function NewProduct() {
 
                                     <input
                                         type="text"
-                                        value=""
-                                        // onChange={e =>}
+                                        value={productData.image}
+                                        onChange={e => setProductData({ ...productData, image: e.target.value })}
                                         placeholder="Ex: 🍚"
                                         className={inputCSS}
                                     />

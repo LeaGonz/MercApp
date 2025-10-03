@@ -53,7 +53,7 @@ export default function NewProduct() {
             unit: productData.unit,
             price: Number(productData.price),
             currency: "EUR",
-            image: productData.image.trim(),
+            image: productData.image.trim().length < 3 ? productData.image.trim() : "",
             store: productData.store
         }
 

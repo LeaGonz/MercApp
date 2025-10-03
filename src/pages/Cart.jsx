@@ -5,7 +5,6 @@ import { formatCurrency } from "../utils/currencyFormat"
 import { useTranslation } from "react-i18next"
 
 export default function Cart({ isOpen, onClose }) {
-
     const { t } = useTranslation()
 
     const { activeCart, clearCart, removeFromCart, totalCart } = useCartContext()

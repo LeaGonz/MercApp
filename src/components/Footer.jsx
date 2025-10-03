@@ -1,3 +1,4 @@
+import { useEffect, useState, useRef } from "react"
 import { useTranslation } from "react-i18next"
 import { formatCurrency } from "../utils/currencyFormat"
 import { NavLink } from "react-router-dom"
@@ -8,6 +9,18 @@ export default function Footer({ onCartOpen }) {
 
     const { t } = useTranslation()
     const { totalCart } = useCartContext()
+    const [animation, setAnimation] = useState(false)
+    const prevTotal = useRef(totalCart)
+
+    // Cart button animation
+    useEffect(() => {
+        if (totalCart > prevTotal.current) {
+            setAnimation(true)
+            const timer = setTimeout(() => setAnimation(false), 300)
+            return () => clearTimeout(timer)
+        }
+        prevTotal.current = totalCart
+    }, [totalCart])
 
     // Menu options
     const MENU = [
@@ -44,13 +57,15 @@ export default function Footer({ onCartOpen }) {
                 ))}
 
                 {/* Cart button */}
-                <span className="flex flex-col p-3 text-xs text-green-600 w-16 cursor-pointer">
+                <button
+                    onClick={onCartOpen}
+                    className={`flex flex-col p-3 items-center justify-center text-xs text-green-600 w-16 cursor-pointer transition-transform duration-500 ease-out ${animation ? "scale-120 shadow-xl text-white bg-green-600 rounded-lg" : "scale-100 bg-transparent"}`}
+                    aria-label="Open cart">
                     <ShoppingCart
-                        onClick={onCartOpen}
                         className="w-7 h-7"
                     />
                     <span>{formatCurrency(totalCart)}</span>
-                </span>
+                </button>
 
             </nav >
 

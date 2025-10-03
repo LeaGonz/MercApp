@@ -5,7 +5,7 @@
 
 import { useState, useEffect, useRef } from "react"
 
-const PRODUCTS_JSON = "/data/products.json"
+const PRODUCTS_JSON = `${import.meta.env.BASE_URL}data/products.json`
 const LOCALSTORAGE_KEY = "mercapp_products"
 
 export function useProducts() {

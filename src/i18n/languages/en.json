@@ -34,5 +34,16 @@
       "clear": "Clear",
       "cancel": "Cancel"
     }
+  },
+  "product": {
+    "new": "New Product",
+    "name": "Name",
+    "category": "Category",
+    "unit": "Unit",
+    "price": "Price",
+    "image": "Emoji",
+    "store": "Store",
+    "cancel": "Cancel",
+    "add": "Add"
   }
 }
